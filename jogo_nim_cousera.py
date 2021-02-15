@@ -25,9 +25,6 @@ def usuario_escolhe_jogada(n,m):
         
         return valido
 
-
-
-
 '''funçao partida nao recebe nenhum parametro, solicita os valores de N e M ao usuario
    e inicia o jogo alternando as jogadas entre o usuario e computador. A jogada inicial
    deve ser feita de acordo com a estrategia vencedora, a cada jogada é impresso na tela
@@ -39,11 +36,9 @@ def partida():
 
     n = int(input("Quantas peças? "))
     m = int(input("Limite de peças retiradas por jogada?"))
-
-    
+   
     turno = True    #controle de quem é a vez de jogar
    
-    
     #Verificar se N é multiplo de M+1
     if n%(m+1)== 0 :
           
@@ -76,10 +71,10 @@ def partida():
             print ("Fim do jogo!Voce ganhou!\n\n")
             return 1
 
-
 ''' funçao campeonato realiza tres partidas seguidas do jogo e no final mostra o placar
     e indica o vencedor do campeonato.
     Placar: Você X  Computador '''
+
 def campeonato():
     print("\nVocê escolheu um campeonato\n")
     n_partida = 1 #contador de partidas jogadas
@@ -96,7 +91,6 @@ def campeonato():
 
     print(" ### Final do campeonato! ###")    
     print("Placar: Voce ",usuario,"X",computador,"Computador\n\n")
-
 
 ''' N= numero de peças inicial e M numero maximo de peças que pode ser retirada em uma jogada
     ESTRATEGIA VENCEDORA:
